@@ -1,0 +1,9 @@
+- name: Pull Docker image of ScientificCalc
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: Pull image scientific-calc image
+      docker_image:
+        name: lakshayagarwal/scientific-calc
+        source: pull
