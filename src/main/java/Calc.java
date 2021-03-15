@@ -1,4 +1,7 @@
-import java.util.Scanner;
+import java.util.*;
+import java.lang.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calc
 {
@@ -55,22 +58,34 @@ public class Calc
         }
     }
 
-    public static double squareRoot(double a){
+    private static final Logger logger = LogManager.getLogger(Calc.class);
+
+    public static double squareRoot(double a)
+    {
+        logger.info("Square root operation in progress..");
         return Math.sqrt(a);
     }
 
-    public static double Factorial(double a){
-        if(a == 0)
-            return 1;
-        else
-            return a*Factorial(a-1);
+    public static double Factorial(double a)
+    {
+        logger.info("Factorial operation in progress..");
+        double result = 1;
+
+        for(int i=1;i<=a;i++)
+            result *= i;
+
+        return result;
     }
 
-    public static double natlog(double a){
+    public static double natlog(double a)
+    {
+        logger.info("Natural logarithm operation in progress..");
         return Math.log(a);
     }
 
-    public static double power(double a, double b){
+    public static double power(double a, double b)
+    {
+        logger.info("Power operation in progress..");
         return Math.pow(a,b);
     }
 }
