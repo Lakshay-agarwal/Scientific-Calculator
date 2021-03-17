@@ -31,7 +31,7 @@ public class CalcTest
         double a = 25;
         double expectedResult = 4;
         double result = calculator.squareRoot(a);
-        assertNotEquals(expectedResult, result, 2.0f);
+        assertNotEquals(expectedResult, result, 0.0f);
     }
 
     @Test
@@ -49,7 +49,7 @@ public class CalcTest
         double a = 4;
         double expectedResult = 12;
         double result = calculator.Factorial(a);
-        assertNotEquals(expectedResult, result, 2.0f);
+        assertNotEquals(expectedResult, result, 0.0f);
     }
 
     @Test
@@ -67,7 +67,7 @@ public class CalcTest
         double a = 2.718;
         double expectedResult = 2;
         double result = calculator.natlog(a);
-        assertNotEquals(expectedResult, result, 2.0f);
+        assertNotEquals(expectedResult, result, 0.0f);
     }
 
     @Test
@@ -87,7 +87,7 @@ public class CalcTest
         double b = 2;
         double expectedResult = 10;
         double result = calculator.power(a,b);
-        assertNotEquals(expectedResult, result, 2.0f);
+        assertNotEquals(expectedResult, result, 0.0f);
     }
 
 
