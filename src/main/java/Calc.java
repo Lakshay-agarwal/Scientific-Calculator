@@ -30,6 +30,12 @@ public class Calc
                 System.out.print("Enter operand 1: ");
                 double op1 = in.nextInt();
 
+                if(op1 < 0 && (option == 1 || option == 2 || option == 3))
+                {
+                    System.out.println("Negative operand not allowed");
+                    continue;
+                }
+
                 if(option == 1)
                 {
                     double result = squareRoot(op1);
