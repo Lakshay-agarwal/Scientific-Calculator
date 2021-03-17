@@ -28,7 +28,7 @@ public class Calc
             else
             {
                 System.out.print("Enter operand 1: ");
-                double op1 = in.nextInt();
+                double op1 = in.nextDouble();
 
                 if(op1 < 0 && (option == 1 || option == 2 || option == 3))
                 {
@@ -54,7 +54,7 @@ public class Calc
                 else if(option == 4)
                 {
                     System.out.print("Enter operand 2: ");
-                    double op2 = in.nextInt();
+                    double op2 = in.nextDouble();
 
                     double result = power(op1,op2);
                     System.out.println(op1 + "to the power" + op2 + " = " + result);
